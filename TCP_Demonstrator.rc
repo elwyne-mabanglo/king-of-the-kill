@@ -1,0 +1,334 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 194, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "About the TCP Demonstrator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "TCP_Demonstrator Version 1.0",IDC_STATIC,6,7,119,8,SS_NOPREFIX
+    LTEXT           "Richard Anthony (January 2004)",IDC_STATIC,6,18,119,8
+    DEFPUSHBUTTON   "OK",IDOK,135,8,50,16,WS_GROUP
+    LTEXT           "Email:   R.J.Anthony@gre.ac.uk",IDC_STATIC,6,30,104,8
+    LTEXT           "Simple demonstration of how to create a TCP connection",IDC_STATIC,6,42,182,8
+END
+
+IDD_TCP_DEMONSTRATOR_DIALOG DIALOGEX 0, 0, 201, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TCP Demonstrator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,102,135,93,14
+    PUSHBUTTON      "Server",IDC_SERVER,102,121,93,14
+    PUSHBUTTON      "About",IDC_About,6,135,95,14
+    PUSHBUTTON      "Register",IDC_LOGIN_DLG_REGISTER_BTN,6,121,95,14
+    PUSHBUTTON      "Login",IDC_LOGIN_DLG_LOGIN_BTN,6,106,188,14
+    EDITTEXT        IDC_LOGIN_DLG_USERNAME_TXT,6,60,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOGIN_DLG_PASSWORD_TXT,6,88,187,14,ES_AUTOHSCROLL
+    CTEXT           "Username",IDC_STATIC,6,49,187,8
+    CTEXT           "Password",IDC_STATIC,6,76,187,8
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP,22,3,159,46
+END
+
+IDD_REGISTER_DLG DIALOGEX 0, 0, 173, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_REGISTER_DLG_USERNAME_TXT,7,62,159,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REGISTER_DLG_PASSWORD_TXT,7,87,159,14,ES_AUTOHSCROLL
+    CTEXT           "Username",IDC_STATIC,7,53,159,8
+    CTEXT           "Password",IDC_STATIC,7,77,159,8
+    PUSHBUTTON      "Register",IDC_REGISTER_DLG_REGISTER_BTN,7,103,159,14
+    PUSHBUTTON      "Back",IDC_REGISTER_DLG_BACK_BTN,7,118,159,14
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP,7,7,160,46
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Pretty Good Software"
+            VALUE "FileDescription", "Richard Anthony"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "TCP_Demonstrator.exe"
+            VALUE "LegalCopyright", "Richard Anthony"
+            VALUE "OriginalFilename", "TCP_Demonstrator.exe"
+            VALUE "ProductName", "TCP Demonstrator"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_TCP_DEMONSTRATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_REGISTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\TCP_Demonstrator.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "\\\\storage-stud\\user-area\\3\\me324\\COMP1564_System_Programming\\title.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About TCP_Demonstrator..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TCP_SERVER_DIALOG DIALOGEX 0, 0, 217, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Simple TCP Server Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,7,157,55,14
+    PUSHBUTTON      "Shutdown Server",ID_CLOSE,149,155,61,14
+    LTEXT           "Port (8000 Decimal)",IDC_STATIC,6,20,75,8
+    LTEXT           "Local IP address",IDC_STATIC,6,9,53,8
+    EDITTEXT        IDC_ADDRESS,59,7,151,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Number of connected clients",IDC_STATIC,11,41,92,8
+    EDITTEXT        IDC_CONNECTED_COUNT,109,40,18,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Enable Server",IDC_ENABLE_SERVER,132,39,77,14
+    EDITTEXT        IDC_Server_Port,76,20,134,14,ES_AUTOHSCROLL
+    GROUPBOX        "Message Receive",IDC_STATIC,7,59,203,70
+    PUSHBUTTON      "Send",IDC_BUTTON1,87,156,43,14
+    EDITTEXT        IDC_ReceiveMessage,7,71,203,54,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SENDMSG,7,136,203,14,ES_AUTOHSCROLL
+END
+
+IDD_TCP_CLIENT_DIALOG DIALOGEX 0, 0, 320, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Simple TCP Client Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,196,51,42,14
+    LTEXT           "Server IP address",IDC_STATIC,6,9,58,8
+    EDITTEXT        IDC_ADD_1,69,7,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_2,100,7,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_3,132,7,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADD_4,164,7,20,12,ES_AUTOHSCROLL
+    LTEXT           ".",IDC_STATIC,92,8,8,8
+    LTEXT           ".",IDC_STATIC,124,8,8,8
+    LTEXT           ".",IDC_STATIC,156,8,8,8
+    PUSHBUTTON      "Connect",IDC_CONNECT,243,7,56,14
+    PUSHBUTTON      "Disconnect",IDC_Disconnect,188,33,56,14
+    GROUPBOX        "Latest received message",IDC_STATIC,7,24,295,45
+    EDITTEXT        IDC_SendMessage,16,185,247,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_Send,267,185,38,14
+    GROUPBOX        "Message Receive",IDC_STATIC,7,103,206,70
+    EDITTEXT        IDC_RECEIVE,15,115,189,52,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    LTEXT           "Message number (as sent by Server)",IDC_STATIC,13,53,119,8
+    EDITTEXT        IDC_MESSAGE_NUMBER,139,51,31,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MESSAGE_TEXT,12,35,168,12,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,15,80,190,14,ES_AUTOHSCROLL
+    GROUPBOX        "Nickname",IDC_STATIC,7,68,206,33
+    GROUPBOX        "Players",IDC_STATIC,215,68,97,105
+    GROUPBOX        "Send Message",IDC_STATIC,7,174,306,30
+    LISTBOX         IDC_LIST4,221,79,85,71,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Button2",IDC_BUTTON2,220,152,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TCP_SERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_TCP_CLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TCP_Demonstrator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TCP_Demonstrator.ico"
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TCP_Demonstrator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
